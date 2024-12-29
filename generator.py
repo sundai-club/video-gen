@@ -39,8 +39,8 @@ def generate_video_script(project_data):
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
     # Prepare the messages
-    prompt = open("prompt-video-script-005.txt", "r").read()
-    prompt = prompt.format(**project_data)
+    prompt = open("prompt-extract-project-info-001.txt", "r").read()
+    prompt = str(project_data) + "\n" + prompt
     messages = [
         {"role": "user", "content": prompt},
     ]
@@ -50,5 +50,17 @@ def generate_video_script(project_data):
         model="gpt-4o", messages=messages, temperature=0.7
     )
 
+    # Step 3: Read the second prompt
+    second_prompt = open("prompt-video-script-006.txt", "r").read()
+    
+    second_prompt = response.choices[0].message.content + "\n" + second_prompt
+
+    # Prepend the response from the first API call to the second prompt
+    video_script = client.chat.completions.create(
+        model="gpt-4o", messages=[
+            {"role": "user", "content": second_prompt},
+        ], temperature=0.7
+    )
+
     # Return the generated script
-    return response.choices[0].message.content
+    return video_script.choices[0].message.content
