@@ -7,18 +7,17 @@ from openai import OpenAI
 # Load environment variables
 load_dotenv()
 
-def generate_
 
 def generate_video(script):
     """Generate a video using Replicate"""
     # Initialize the Replicate client
     client = replicate.Client(api_token=os.getenv("REPLICATE_API_TOKEN"))
-    output = replicate.run(
-        "minimax/video-01", input={"prompt": script, "prompt_optimizer": True}
-    )
+    # model = "minimax/video-01" # output['url']
+    model = "lightricks/ltx-video:c441c271f0cfd578aa0cd14a8488329dd10b796313a9335573a4a63507a976a5" # output[0]
+    output = client.run(model, input={"prompt": script, "prompt_optimizer": True})
     print(output)
-    print(output.__dict__)
-    return output['url']
+    print(output[0])
+    return output[0]
 
 
 def generate_video_script(project_data):
@@ -40,8 +39,8 @@ def generate_video_script(project_data):
             Title: {project_data.get("title", "")}
             Preview: {project_data.get("preview", "")}
             Description: {project_data.get("description", "")}
-            Tech Tags: {', '.join([tag.get("name") for tag in project_data.get("techTags", [])])}
-            Domain Tags: {', '.join([tag.get("name") for tag in project_data.get("domainTags", [])])}
+            Tech Tags: {project_data.get("techTags", [])}
+            Domain Tags: {project_data.get("domainTags", [])}
             
             Please create a video script that showcases this project effectively.""",
         },
