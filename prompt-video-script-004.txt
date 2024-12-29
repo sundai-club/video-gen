@@ -1,0 +1,19 @@
+Write me a prompt for Sora based on the following description of the project and make sure not to use texts in the video. 
+Do not output anything else other than the resulting prompt.
+
+
+Project Details:
+
+Title: {title}
+
+Subtitle: {preview}
+
+Tech Tags: {techTags}
+
+Domain Tags: {domainTags}
+
+Description: 
+<<START DESCRIPTION>>
+{description}
+<<END DESCRIPTION>>
+

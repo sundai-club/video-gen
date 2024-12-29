@@ -1,0 +1,30 @@
+Write me a prompt for Sora based on the following description of the project and make sure not to use texts in the video. Do not output anything else other than the resulting prompt.
+
+Project Details:
+
+Title: {title}
+
+Subtitle: {preview}
+
+Tech Tags: {techTags}
+
+Domain Tags: {domainTags}
+
+Description:
+<<START DESCRIPTION>>
+{description}
+<<END DESCRIPTION>>
+
+Visual Prompt Template:
+
+Scene 1: The Problem or Challenge (Pixel Art)
+"A pixel art scene shows a [user type derived from description] in a [setting derived from description] surrounded by [relevant tools, objects, or symbols from the description]. The user looks [emotion derived from description, e.g., frustrated, overwhelmed, tired], and their environment reflects [key challenge described, e.g., cluttered, chaotic, glitching data]. Subtle animations, such as [flickering screens, floating icons, glitch effects], emphasize their emotional state. The colors are [palette reflecting challenge, e.g., muted blues, grays, or purples], reinforcing a mood of [emotion, e.g., tension, confusion, or frustration]."
+
+Transition Animation:
+"A soft pixelated glow appears from [key object/tool], and the scene starts to shift subtly with warmer colors and calming animations, hinting at a solution."
+
+Scene 2: Discovery and Transformation (Pixel Art)
+"The scene brightens into a vibrant pixel art environment. The user is now interacting confidently with [tool/platform/interface derived from description], which is represented by [key elements, e.g., glowing panels, organized dashboards, interactive animations]. The user's body language shows [emotion, e.g., confidence, focus, joy], and their surroundings now reflect clarity and order with a warm palette of [inviting colors, e.g., yellows, greens, light blues]. Subtle animated effects like [progress bars filling, sparkles glowing, smooth transitions] highlight the transformation. The user smiles, symbolizing a sense of accomplishment and control."
+
+Ending Animation:
+"The camera zooms into the glowing interface or tool, showing a polished pixel art representation of the platform. The screen holds briefly before fading into soft pixelated sparkles."
