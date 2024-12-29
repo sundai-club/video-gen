@@ -1,5 +1,5 @@
 
-*"Using the insights above, write a single cohesive Pixel Art Video Prompt for Sora:
+"Using the insights above, write a single cohesive Pixel Art Video Prompt for Sora:
 
 Goal:
 
@@ -13,7 +13,9 @@ Start with a clear visual representation of the problem phase with appropriate e
 Transition smoothly into the solution phase with a visually engaging change in lighting, user posture, and background tone.
 Highlight user interaction with the product through clear and meaningful animations.
 End with a visually satisfying closing shot, such as the user smiling confidently, the interface glowing, or a soft fade-out with pixel sparkles.
-Avoid using any text in the video. Focus purely on emotional storytelling, expressive visuals, and smooth transitions."*
+Avoid using any text in the video. Focus purely on emotional storytelling, expressive visuals, and smooth transitions."
+
+Ensure that you do not use "scenes" narrative. Generate a single coherent prompt for video script.
 
 Example Output for Pixel Art Video Prompt:
 "A pixel art character sits surrounded by glitching screens, chaotic notifications, and swirling pixelated symbols. Their posture is slouched, eyes tired, and faint flickering question marks hover above their head. The room is dark, painted in muted blues and grays, and faint glitch effects ripple across the screens. The character scrolls endlessly on a central glowing screen, their frustration palpable.
