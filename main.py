@@ -1,5 +1,6 @@
 import argparse
 import requests
+import subprocess
 import time
 import csv
 import sys
@@ -16,6 +17,7 @@ def parse_project(project_data):
         "description": project_data["description"],
         "techTags": ', '.join([tag["name"] for tag in project_data["techTags"]]),
         "domainTags": ', '.join([tag["name"] for tag in project_data["domainTags"]]),
+        "thumbnail": project_data["thumbnail"]["url"]
     }
 
 def fetch_sundai_project_data(project_id):
@@ -121,7 +123,7 @@ def main():
         if not args.no_video:
             # Generate video
             print("\nGenerating video...")
-            video_url = generate_video(script)
+            video_url = generate_video(script, project_data.get('thumbnail'))
             
             print(f"Video URL: {video_url}")
             # Download video
@@ -133,6 +135,18 @@ def main():
                     if chunk:
                         f.write(chunk)
             print(f"Downloaded video to {video_filename}")
+
+            # Convert video to animated GIF
+            print("Converting video to animated GIF...")
+            gif_filename = f"output/{project_data.get('id')}-{project_data.get('title')}-{timestamp}.gif"
+            subprocess.run([
+                "ffmpeg",
+                "-i", video_filename,
+                "-vf", "fps=10,scale=320:-1:flags=lanczos",
+                "-c:v", "gif",
+                gif_filename
+            ])
+            print(f"Saved animated GIF to {gif_filename}")
         else:
             print("\nSkipping video generation as --no-video flag was provided")
 

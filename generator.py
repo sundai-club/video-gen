@@ -9,14 +9,20 @@ from openai import OpenAI
 load_dotenv()
 
 
-def generate_video(script):
+def generate_video(script, thumbnail=None):
     """Generate a video using Replicate"""
     # Initialize the Replicate client
     client = replicate.Client(api_token=os.getenv("REPLICATE_API_TOKEN"))
     model = "minimax/video-01" # output['url']
     # model = "minimax/video-01-live" # output['url'], but you need first_frame_image
     # model = "lightricks/ltx-video:c441c271f0cfd578aa0cd14a8488329dd10b796313a9335573a4a63507a976a5" # output[0]
-    output = client.run(model, input={"prompt": script, "prompt_optimizer": True})
+    input = {
+        "prompt": script,
+        "prompt_optimizer": True,
+    }
+    if thumbnail:
+        input["first_frame_image"] = thumbnail
+    output = client.run(model, input=input)
     print(output)
     try:
         print(output.__dict__)
