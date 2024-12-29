@@ -6,14 +6,13 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-def fetch_project_data(project_id):
-    """Fetch project data from the Sundai API"""
-    url = f"https://www.sundai.club/api/projects/{project_id}"
-    response = requests.get(url)
-    if response.status_code == 200:
-        return response.json()
-    else:
-        raise Exception(f"Failed to fetch project data: {response.status_code}")
+def generate_video(script):
+    """Generate a video using Replicate"""
+    # Initialize the Replicate client
+    # client = replicate.Client(api_token=os.getenv("REPLICATE_API_TOKEN"))
+
+    return None
+
 
 def generate_video_script(project_data):
     """Generate a video script using OpenAI"""
@@ -50,28 +49,3 @@ def generate_video_script(project_data):
 
     # Return the generated script
     return response.choices[0].message.content
-
-def main():
-    # Project ID from the URL
-    project_id = "34dffa61-f90e-4184-a034-7bb5ab4f0981"
-    
-    try:
-        # Fetch project data
-        print("Fetching project data...")
-        project_data = fetch_project_data(project_id)
-        
-        # Generate video script
-        print("\nGenerating video script...")
-        script = generate_video_script(project_data)
-        
-        # Print the generated script
-        print("\nGenerated Video Script:")
-        print("=" * 50)
-        print(script)
-        print("=" * 50)
-        
-    except Exception as e:
-        print(f"Error: {str(e)}")
-
-if __name__ == "__main__":
-    main()
