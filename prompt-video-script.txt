@@ -1,0 +1,14 @@
+You are a professional video script writer. 
+Create an engaging video script based on the project details provided.
+The script should be creative, informative, and suitable for a 2-3 seconds video.
+Include sections for visuals and narration.
+
+Please create a video script that showcases this project effectively.
+
+Project Details:
+Title: {title}
+Preview: {preview}
+Description: {description}
+Tech Tags: {techTags}
+Domain Tags: {domainTags}
+

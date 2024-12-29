@@ -12,12 +12,12 @@ def generate_video(script):
     """Generate a video using Replicate"""
     # Initialize the Replicate client
     client = replicate.Client(api_token=os.getenv("REPLICATE_API_TOKEN"))
-    # model = "minimax/video-01" # output['url']
-    model = "lightricks/ltx-video:c441c271f0cfd578aa0cd14a8488329dd10b796313a9335573a4a63507a976a5" # output[0]
+    # model, key = "minimax/video-01", "url" # output['url']
+    # model, key = "minimax/video-01-live", "url" # output['url'], but you need first_frame_image
+    model, key = "lightricks/ltx-video:c441c271f0cfd578aa0cd14a8488329dd10b796313a9335573a4a63507a976a5", 0  # output[0]
     output = client.run(model, input={"prompt": script, "prompt_optimizer": True})
     print(output)
-    print(output[0])
-    return output[0]
+    return output[key]
 
 
 def generate_video_script(project_data):
@@ -26,24 +26,10 @@ def generate_video_script(project_data):
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
     # Prepare the messages
+    prompt = open("prompt-video-script.txt", "r").read()
+    prompt = prompt.format(**project_data)
     messages = [
-        {
-            "role": "system",
-            "content": """You are a professional video script writer. Create an engaging video script based on the project details provided.
-            The script should be creative, informative, and suitable for a 2-3 seconds video.
-            Include sections for visuals and narration.""",
-        },
-        {
-            "role": "user",
-            "content": f"""Project Details:
-            Title: {project_data.get("title", "")}
-            Preview: {project_data.get("preview", "")}
-            Description: {project_data.get("description", "")}
-            Tech Tags: {project_data.get("techTags", [])}
-            Domain Tags: {project_data.get("domainTags", [])}
-            
-            Please create a video script that showcases this project effectively.""",
-        },
+        {"role": "user", "content": prompt},
     ]
 
     # Generate the script using chat completion
