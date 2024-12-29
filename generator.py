@@ -40,7 +40,7 @@ def generate_video_script(project_data):
 
     # Prepare the messages
     prompt = open("prompt-extract-project-info-001.txt", "r").read()
-    prompt = str(project_data) + prompt
+    prompt = str(project_data) + "\n" + prompt
     messages = [
         {"role": "user", "content": prompt},
     ]

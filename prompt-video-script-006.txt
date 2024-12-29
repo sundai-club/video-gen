@@ -1,23 +1,23 @@
+
+*"Using the insights above, write a single cohesive Pixel Art Video Prompt for Sora:
+
 Goal:
 
-Use the extracted insights to create a single cohesive pixel art video prompt that captures the emotional arc and visual storytelling requirements.
-Ensure clarity, strong visual metaphors, and no text overlays in the video.
+Combine all insights into a single cohesive pixel art prompt optimized for Sora.
+Ensure clear emotional storytelling, vivid visual metaphors, and smooth animations without text.
 Prompt for Step 2:
 
-*"Using the insights given, create a single cohesive Pixel Art Video Prompt for Sora:
+Create a complete narrative arc in pixel art style showing the transformation from Problem to Solution:
 
-The prompt must include:
+Start with a clear visual representation of the problem phase with appropriate emotional cues and animations.
+Transition smoothly into the solution phase with a visually engaging change in lighting, user posture, and background tone.
+Highlight user interaction with the product through clear and meaningful animations.
+End with a visually satisfying closing shot, such as the user smiling confidently, the interface glowing, or a soft fade-out with pixel sparkles.
+Avoid using any text in the video. Focus purely on emotional storytelling, expressive visuals, and smooth transitions."*
 
-Scene 1 (Problem Phase): Represent the emotional challenge with clear pixel art visuals and animations.
-Transition Animation: A smooth transition that hints at a solution (e.g., a glow, a spark effect).
-Scene 2 (Solution Phase): Show the transformation clearly, with brighter visuals and engaging pixel animations.
-Ending Animation: A focused shot, such as a glowing interface or central character interaction, fading smoothly to pixelated sparkles or light.
-Avoid any use of text in the video. Rely on expressive visuals, strong emotional cues, and smooth pixel animations to tell the story effectively."*
+Example Output for Pixel Art Video Prompt:
+"A pixel art character sits surrounded by glitching screens, chaotic notifications, and swirling pixelated symbols. Their posture is slouched, eyes tired, and faint flickering question marks hover above their head. The room is dark, painted in muted blues and grays, and faint glitch effects ripple across the screens. The character scrolls endlessly on a central glowing screen, their frustration palpable.
 
-Example Output for Pixel Art Sora Prompt:
-"Scene 1: A pixel art character sits in front of a chaotic wall of glitching screens, endlessly scrolling through fragmented notifications. The screens flicker, icons float in disarray, and the character’s expression shows frustration and exhaustion. The background is dark, dominated by cool blues and grays. Tiny pixel animations of flickering lights and floating question marks emphasize confusion.
-Transition Animation: One screen starts glowing softly, and the chaotic visuals begin to fade slightly as warm light spreads outward.
+Suddenly, one screen begins to emit a warm pixelated glow, spreading across the desk and lighting up the character's face. The chaotic screens reorganize into clean glowing panels, bright animations, and smooth dashboards in vibrant yellows, greens, and light blues. The character's posture shifts—they now sit upright, focused, and confident. They interact with the glowing interface, tapping buttons that animate with smooth checkmarks and soft glowing effects. The background feels lighter, with faint pixelated stars gently twinkling.
 
-Scene 2: The screens now display an organized, glowing dashboard filled with smooth animated panels. The character sits upright, their posture confident, and they interact with the glowing interface. Smooth pixel animations show progress bars filling up, checkmarks appearing, and subtle sparkles highlighting key actions. The room is now lit with warm yellows, greens, and light blues. The background feels calm and inviting, and the character smiles, radiating satisfaction and clarity.
-
-Ending Animation: The camera zooms into the central glowing dashboard, where a faint sparkle animation highlights the glowing interface before fading gently to black."
+In the final moment, the camera zooms into the central screen, where glowing visuals fade into a warm pixelated light, leaving behind soft sparkling particles in the background as the scene gently fades to black."
