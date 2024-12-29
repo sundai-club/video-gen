@@ -4,14 +4,8 @@ Use the extracted insights to create a single cohesive pixel art video prompt th
 Ensure clarity, strong visual metaphors, and no text overlays in the video.
 Prompt for Step 2:
 
-*"Using the insights below, create a single cohesive Pixel Art Video Prompt for Sora:
+*"Using the insights given, create a single cohesive Pixel Art Video Prompt for Sora:
 
-User Type: {User Type}
-Core Challenge: {Core Challenge}
-Emotional Journey: {Emotional Journey}
-Visual Metaphors: {Visual Metaphors}
-Color Palette: {Color Palette}
-Key Actions: {Key Actions}
 The prompt must include:
 
 Scene 1 (Problem Phase): Represent the emotional challenge with clear pixel art visuals and animations.
