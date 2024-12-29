@@ -1,0 +1,24 @@
+Goal:
+
+Analyze the project details and extract clear, actionable insights specifically tailored for a Pixel Art Storytelling Arc.
+Capture the user's emotional journey, visual metaphors, and key scene details that translate well into pixel art.
+Prompt for Step 1:
+
+*"Analyze the following project details and extract key insights specifically for a Pixel Art Video Prompt designed for Sora:
+
+User Type: Who is the primary user? (e.g., student, teacher, casual user)
+Core Challenge: What is the main problem or challenge addressed by the project?
+Emotional Journey: What are the emotional states of the user before and after interacting with the product?
+Visual Metaphors: Suggest pixel-friendly visual representations for the problem and solution (e.g., glitching screens, glowing interfaces, cluttered desks).
+Color Palette: Suggest a muted/dark palette for the problem phase and a vibrant palette for the solution phase.
+Key Actions: Identify the most impactful user action in both the problem and solution phases (e.g., clicking a button, seeing results).
+The output should be clear and visually driven, emphasizing emotions, pixel-friendly aesthetics, and smooth visual storytelling. Avoid assumptions and stick to the project’s core narrative."*
+
+Example Output from Step 1:
+
+User Type: A curious digital content enthusiast
+Core Challenge: Overwhelmed by fragmented and chaotic online information
+Emotional Journey: Confusion → Clarity → Satisfaction
+Visual Metaphors: Flickering screens and floating glitch effects for the problem phase; glowing dashboards and organized UI panels for the solution phase
+Color Palette: Problem Scene – Dark blues and grays; Solution Scene – Bright yellows, greens, and light blues
+Key Actions: Problem – Endless scrolling on chaotic screens; Solution – Confidently selecting information from a glowing dashboard
