@@ -40,7 +40,7 @@ def generate_video_script(project_data):
 
     # Prepare the messages
     prompt = open("prompt-extract-project-info-001.txt", "r").read()
-    prompt = project_data + prompt
+    prompt = str(project_data) + prompt
     messages = [
         {"role": "user", "content": prompt},
     ]
@@ -51,13 +51,15 @@ def generate_video_script(project_data):
     )
 
     # Step 3: Read the second prompt
-    second_prompt = prompt = open("prompt-video-script-006.txt", "r").read()
+    second_prompt = open("prompt-video-script-006.txt", "r").read()
     
     second_prompt = response.choices[0].message.content + "\n" + second_prompt
 
     # Prepend the response from the first API call to the second prompt
     video_script = client.chat.completions.create(
-        model="gpt-4o", messages=second_prompt, temperature=0.7
+        model="gpt-4o", messages=[
+            {"role": "user", "content": second_prompt},
+        ], temperature=0.7
     )
 
     # Return the generated script
