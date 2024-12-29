@@ -55,6 +55,11 @@ def main():
         action="store_true",
         help="Export all projects to CSV file",
     )
+    parser.add_argument(
+        "--no-video",
+        action="store_true",
+        help="Skip video generation and only create the script",
+    )
 
     args = parser.parse_args()
 
@@ -113,22 +118,23 @@ def main():
         print(script)
         print("=" * 50)
 
-        # Genetate video
-        print("\nGenerating video...")
-        video_url = generate_video(script)
-        
-
-        print(f"Video URL: {video_url}")
-        # Download video
-        print("\nDownloading video...")
-        video_filename = f"output/{project_data.get('id')}-{project_data.get('title')}-{timestamp}.mp4"
-        video_response = requests.get(video_url, stream=True)
-        with open(video_filename, 'wb') as f:
-            for chunk in video_response.iter_content(chunk_size=1024):
-                if chunk:
-                    f.write(chunk)
-        print(f"Downloaded video to {video_filename}")
-
+        if not args.no_video:
+            # Generate video
+            print("\nGenerating video...")
+            video_url = generate_video(script)
+            
+            print(f"Video URL: {video_url}")
+            # Download video
+            print("\nDownloading video...")
+            video_filename = f"output/{project_data.get('id')}-{project_data.get('title')}-{timestamp}.mp4"
+            video_response = requests.get(video_url, stream=True)
+            with open(video_filename, 'wb') as f:
+                for chunk in video_response.iter_content(chunk_size=1024):
+                    if chunk:
+                        f.write(chunk)
+            print(f"Downloaded video to {video_filename}")
+        else:
+            print("\nSkipping video generation as --no-video flag was provided")
 
     except Exception as e:
         print(f"Error: {str(e)}")  # Add your project processing logic here

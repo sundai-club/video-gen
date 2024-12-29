@@ -17,6 +17,16 @@ def generate_video(script):
     model, key = "lightricks/ltx-video:c441c271f0cfd578aa0cd14a8488329dd10b796313a9335573a4a63507a976a5", 0  # output[0]
     output = client.run(model, input={"prompt": script, "prompt_optimizer": True})
     print(output)
+    try:
+        print(output.__dict__)
+        print(output[0])
+        print(output['url'])
+    except Exception as e:
+        print(e)
+    if isinstance(output, list):
+        output = output[0]
+    if isinstance(output, dict):
+        output = output['url']
     return output[key]
 
 
@@ -34,7 +44,7 @@ def generate_video_script(project_data):
 
     # Generate the script using chat completion
     response = client.chat.completions.create(
-        model="gpt-4", messages=messages, temperature=0.7
+        model="gpt-4o", messages=messages, temperature=0.7
     )
 
     # Return the generated script

@@ -1,0 +1,27 @@
+Scene 1:
+
+"A pixel art scene shows a student character sitting at a cluttered desk in a dimly lit 8-bit style room. The student, wearing a hoodie, has messy pixelated hair and slumped shoulders. Their expression shows visible frustration as they stare at a glowing pixelated laptop screen displaying an intimidating, unsolved problem. Around them, scattered pixelated books and papers clutter the desk. A small, pixelated clock on the wall ticks faintly in the corner, adding to the tense atmosphere. The color palette is dark, with blues and grays dominating the scene to reflect a sense of struggle and exhaustion. Subtle animations: the student sighs, the clock hand ticks, and faint question marks hover above their head, flickering like old-school game sprites."
+
+Emotional Focus:
+
+Overwhelm
+Frustration
+A sense of being stuck
+Transition Animation:
+"A pixelated spark of light suddenly appears on the laptop screen, glowing softly and pulsing as if hinting at a solution.
+
+Scene 2: Discovery and Transformation (Pixel Art)
+
+"The scene transforms as bright pixelated light radiates from the laptop screen, illuminating the room. The color palette shifts to warm yellows, greens, and blues. The student now sits upright, their pixelated eyes wide with excitement. The screen displays the ‘Test Any Knowledge!’ app interface in vibrant pixel art style, with multiple-choice questions smoothly appearing in retro game-inspired pop-up windows. The student interacts confidently with the screen, selecting answers, and pixelated green checkmarks appear with satisfying animated sparkles. A progress bar fills up smoothly in the corner of the screen. The background feels brighter, with light beams coming from a pixelated window. Tiny pixelated stars twinkle faintly in the background. The student character smiles widely, a triumphant fist raised in the air as a subtle ‘LEVEL UP!’ pixel animation briefly flashes above them."
+
+Emotional Focus:
+
+Discovery
+Relief
+Empowerment
+Ending Frame Animation:
+"The camera zooms in on the glowing laptop screen, where the pixel art ‘Test Any Knowledge!’ logo appears. Below it, the tagline animates in retro pixel text: ‘Learn. Quiz. Master.’ The scene freezes as faint pixel sparkles animate around the logo."
+
+🎥 Storyboard Flow Summary:
+Scene 1: Captures the emotional weight of frustration in a pixelated, dim environment.
+Scene 2: Showcases bright discovery and empowerment, with vibrant, engaging pixel art animations.
