@@ -123,7 +123,9 @@ def main():
         if not args.no_video:
             # Generate video
             print("\nGenerating video...")
-            video_url = generate_video(script, project_data.get('thumbnail'))
+            thumbnail = project_data.get('thumbnail')
+            thumbnail = None
+            video_url = generate_video(script, thumbnail)
             
             print(f"Video URL: {video_url}")
             # Download video
