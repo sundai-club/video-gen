@@ -1,0 +1,24 @@
+"Using the insights above, write a single cohesive Heartwarming Photorealistic Video Prompt for Sora:
+
+Goal:
+
+Combine all insights into a single cohesive, uplifting photorealistic prompt optimized for Sora.
+Ensure heartwarming emotional storytelling, natural interactions with furry companions, and joyful transitions without text.
+Prompt for Step 2:
+
+Create a complete narrative arc in photorealistic style showing the transformation from Problem to Solution:
+
+Start with a cozy, relatable moment featuring the user and their pet companion.
+Transition smoothly into the solution phase with warm lighting and playful pet interactions.
+Highlight user interaction with the product while maintaining natural, cheerful moments with their furry friends.
+End with a heartwarming closing shot that celebrates the joy of success shared with animal companions.
+Avoid using any text in the video. Focus purely on emotional storytelling, realistic visuals, and natural interactions."
+
+Ensure that you do not use "scenes" narrative. Generate a single coherent prompt for video script.
+
+Example Output for Photorealistic Video Prompt:
+"Early morning sunlight filters through sheer curtains into a cozy home office, where a person sits cross-legged in a comfortable chair, their fluffy ginger cat curled up peacefully on their lap. As they browse through multiple tabs on their laptop, they occasionally pause to scratch behind their cat's ears, finding comfort in their companion's presence despite their mild frustration with the scattered information. The room has a warm, lived-in feel with a cat tree by the window and a few toys scattered about.
+
+As they discover a new interface, their golden retriever puppy, who had been napping in a nearby dog bed, perks up and trots over with a wagging tail. The lighting shifts to a cheerful afternoon glow, casting warm highlights across the scene. The workspace transforms naturally - the scattered papers find their place, the interface becomes more organized, and both pets seem to mirror their owner's lifting mood. The cat stretches contentedly while the puppy playfully brings over a toy, adding moments of joy to the productive workflow.
+
+The final sequence shows the person leaning back in their chair with a satisfied smile, their cat now perched on the desk watching the screen with typical feline curiosity, while the puppy rests its head on their lap. Golden sunlight streams through the window, creating a cozy atmosphere as the camera gently pans around to show the harmonious scene - a perfect blend of productivity and the simple joy of working from home with beloved pets. The shot gracefully fades out as the puppy gives a happy tail wag and the cat begins to purr."

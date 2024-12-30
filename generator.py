@@ -14,6 +14,7 @@ def generate_video(script, thumbnail=None):
     # Initialize the Replicate client
     client = replicate.Client(api_token=os.getenv("REPLICATE_API_TOKEN"))
     model = "minimax/video-01" # output['url']
+    # model = "tencent/hunyuan-video:847dfa8b01e739637fc76f480ede0c1d76408e1d694b830b5dfb8e547bf98405"
     # model = "minimax/video-01-live" # output['url'], but you need first_frame_image
     # model = "lightricks/ltx-video:c441c271f0cfd578aa0cd14a8488329dd10b796313a9335573a4a63507a976a5" # output[0]
     input = {

@@ -15,9 +15,9 @@ def parse_project(project_data):
         "title": project_data["title"],
         "preview": project_data["preview"],
         "description": project_data["description"],
-        "techTags": ', '.join([tag["name"] for tag in project_data["techTags"]]),
-        "domainTags": ', '.join([tag["name"] for tag in project_data["domainTags"]]),
-        "thumbnail": project_data["thumbnail"]["url"]
+        "techTags": ', '.join(tag["name"] for tag in project_data.get("techTags", [])),
+        "domainTags": ', '.join(tag["name"] for tag in project_data.get("domainTags", [])),
+        "thumbnail": project_data.get("thumbnail", {}).get("url") if project_data.get("thumbnail") else None
     }
 
 def fetch_sundai_project_data(project_id):
