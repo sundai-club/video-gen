@@ -30,7 +30,7 @@ def generate_video(script, thumbnail=None):
         print(output[0])
         print(output['url'])
     except Exception as e:
-        print(e)
+        print('Expected error:', e)
     if isinstance(output, list):
         output = output[0]
     if isinstance(output, dict):
